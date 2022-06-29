@@ -42,5 +42,8 @@ export default {
     babel: {
       compact: true,
     }
-  }
+  },
+
+  ssr: false, // サーバーサイドレンダリングを無効化
+  target: 'server'
 }
