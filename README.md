@@ -1,69 +1,32 @@
-# nuxt
+# 桂三度風アプリ
+〜AWS AmplifyによるNext.jsアプリ（シングルページ）のデプロイ習作〜
 
-## Build Setup
+![Simulator Screen Shot - iPhone 8 - 2022-07-07 at 10 27 01](https://user-images.githubusercontent.com/31175109/177670638-44d0ef55-c334-4503-995d-372938776edb.png)
 
-```bash
-# install dependencies
-$ npm install
+## 概要
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+AWS Amplifyで簡単なNuxt.jsアプリ（シングルページ）のデプロイ方法や、Githubによるソースコード公開を学びます。
+よく教則として取り上げられている「カウンター」「FizzBuzz問題」のようなものです。
+今回はNuxt.js特有の機能であるサーバーサイドレンダリングは利用しておりません。
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+## 要件
 
-# generate static project
-$ npm run generate
-```
+### フロントエンド
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+- ブラウザでアプリのURLを開くと、0から1秒ごとに1ずつ増大するカウンターが動作する。
+- 顔文字が表示されている。
+- 三の倍数（0は含まない）、または三が含まれている場合、顔文字が別のものに変化する
+- リセットボタンを押すとカウンターがリセットされる
+- コードはGithubの公開リポジトリへアップされる
 
-## Special Directories
+### バックエンド
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+- AWS Amplifyでデプロイされること
+- Basic認証によるパスワード保護つき
+- 自分が所有するドメインの、`3times` のサブドメインでアクセスできるようにする
 
-### `assets`
+### その他
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+- デスクトップでも,AWS Cloud9でも開発が可能であること
 
 
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
