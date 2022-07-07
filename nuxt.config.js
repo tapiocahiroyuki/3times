@@ -9,7 +9,6 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '三の倍数、または三が含まれているとアイコンが変化するカウンターです。Vue.js/Nuxt.jsの習作として制作。' },
-      { name: 'description', content: '三の倍数、または三が含まれているとアイコンが変化するカウンターです。Vue.js/Nuxt.jsの習作として制作。' },
       { name: 'format-detection', content: 'telephone=no' },
       {name:"msapplication-square70x70logo",content:"/favicons/site-tile-70x70.png"},
       {name:"msapplication-square150x150logo",content:"/favicons/site-tile-150x150.png"},
